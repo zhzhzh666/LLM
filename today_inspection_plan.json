@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-02-14T10:00:00",
+  "source": "Qwen3Max_TSP_EntranceToExit_Chinese",
+  "decision_reason": "货架A区和货架B区上次任务失败，需重试；货架C区已成功，可跳过。",
+  "total_distance_meters": 31.16,
+  "waypoints": [
+    {
+      "point_name": "入口",
+      "position": [
+        -4.5,
+        11.0,
+        0.0
+      ],
+      "action": "arrive",
+      "arm_task_type": 0
+    },
+    {
+      "point_name": "货架B区",
+      "position": [
+        -1.5,
+        -7.0,
+        0.0
+      ],
+      "action": "execute_arm_task_2",
+      "arm_task_type": 2
+    },
+    {
+      "point_name": "货架A区",
+      "position": [
+        -3.0,
+        -9.5,
+        0.0
+      ],
+      "action": "execute_arm_task_1",
+      "arm_task_type": 1
+    },
+    {
+      "point_name": "出口",
+      "position": [
+        3.0,
+        -1.5,
+        0.0
+      ],
+      "action": "arrive",
+      "arm_task_type": 0
+    }
+  ]
+}

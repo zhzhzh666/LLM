@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-02-13T14:30:00",
+  "robot_id": "ARM_ROBOT_01",
+  "map_version": "v1.0",
+  "visited_points": ["入口", "货架A区", "货架B区", "中转点", "货架C区", "出口"],
+  "tasks_executed": {
+    "入口": "arrived",
+    "货架A区": "arm_task_1_failed",
+    "货架B区": "arm_task_2_failed",
+    "中转点": "arrived",
+    "货架C区": "arm_task_1_success",
+    "出口": "arrived"
+  },
+  "anomalies": [
+    "货架B区_arm_task_2_timeout",
+    "货架B区_gripper_slip_during_grasp",
+    "货架B区_object_not_found_in_vision"
+  ],
+  "notes": "在货架B区执行任务类型2（抓取）时，机械臂出现夹爪打滑、视觉系统未识别目标物体，重试两次后放弃。其他点位任务均正常完成。"
+}
